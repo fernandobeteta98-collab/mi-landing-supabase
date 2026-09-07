@@ -2,6 +2,8 @@ import { supabase } from '../../../lib/supabase';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+export const dynamic = 'force-dynamic'; // <-- AGREGA ESTA LÍNEA
+
 export default async function ProductoByIdPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const { data: producto } = await supabase.from('productos').select('*').eq('id', id).single();
