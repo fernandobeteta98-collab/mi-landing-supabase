@@ -20,5 +20,5 @@ Landing page funcional desarrollada con Next.js 16 (App Router) y Supabase para 
 
 1. Clonar el repositorio:
    ```bash
-   git clone <URL_DE_TU_REPOSITORIO_GITHUB>
+   git clone <https://github.com/fernandobeteta98-collab/mi-landing-supabase.git>
    cd mi-landing-supabase
