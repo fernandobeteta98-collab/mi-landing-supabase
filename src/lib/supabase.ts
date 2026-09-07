@@ -3,7 +3,6 @@ import { createClient } from '@supabase/supabase-js';
 const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const rawKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 
-// Limpia cualquier comilla, espacio o barra al final que venga de Vercel
 const cleanUrl = rawUrl.replace(/["'\s]/g, '').replace(/\/$/, '');
 const cleanKey = rawKey.replace(/["'\s]/g, '');
 
